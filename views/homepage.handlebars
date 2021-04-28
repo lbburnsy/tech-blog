@@ -1,16 +1,13 @@
+{{#each posts as |post| }}
 <div class="card">
     <div class="title">
-        <h2>Blog Title</h2>
-        <p>By Someone on 8/8/8888</p>
+        <h2>{{post.title}}</h2>
+        <p>By {{post.user.name}} on {{post.data_created}}</p>
     </div>
     <div class="content">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            explicabo amet commodi sit, ullam pariatur excepturi quod laboriosam
-            ratione beatae temporibus quis, possimus consectetur voluptatum.
-            Inventore nisi animi asperiores assumenda, perferendis dolore qui
-            quisquam mollitia ad vitae nulla in vel ab dolorum amet voluptate
-            numquam cumque eius id, atque aspernatur!
+            {{post.content}}
         </p>
     </div>
 </div>
+{{/each}}
