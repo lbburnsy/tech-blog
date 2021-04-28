@@ -7,6 +7,6 @@
         </p>
         <a href="/post/{{post.id}}" class="btn btn-primary">Read More:</a>
       </div>
-      <div class="card-footer text-muted">By {{post.user.name}} on {{post.date_created}}</div>
+      <div class="card-footer text-muted">By {{post.user.name}} on {{format_date post.date_created}}</div>
     </div>
 {{/each}}

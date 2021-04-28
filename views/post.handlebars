@@ -6,7 +6,11 @@
       {{content}}
     </p>
   </div>
-  <div class="card-footer text-muted">{{date_created}}</div>
+  <div class="card-footer text-muted">{{format_date date_created}}</div>
+</div>
+
+<div class="container">
+  <h4>Recent Comments:</h2>
 </div>
 
 {{#each comments as |comment|}}
@@ -14,7 +18,7 @@
   <div class="row comment-border">
     <div class="col-2">
       <p>By {{comment.user.name}}</p>
-      <p>on {{comment.date_created}}</p>
+      <p>on {{format_date comment.date_created}}</p>
     </div>
     <div class="col-10">
       <p>
