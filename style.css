@@ -71,3 +71,8 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+.post-header {
+    display: flex;
+    justify-content: space-around;
+}
