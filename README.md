@@ -7,7 +7,7 @@ A full stack heroku deployed application that functions as a CMS style tech blog
 - [License](#license)
 - [Authors](#authors)
 ## Deployment
-This app is deployed on Heroku, and is available for complete use here: insert link. It can also be run locally directly out of this repository. If you would like to go that route, please visit the installation section below.
+This app is deployed on Heroku, and is available for complete use [here](https://safe-castle-63309.herokuapp.com/). It can also be run locally directly out of this repository. If you would like to go that route, please visit the installation section below.
 ## Installation
 This app requires several commands to correctly run. To begin, from your command line in the root folder of your app, install the dependencies needed. Run:
 ```
