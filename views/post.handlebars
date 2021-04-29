@@ -1,3 +1,4 @@
+{{!-- Displays the specific post --}}
 <div class="card text-center">
   <div class="card-header">By {{user.name}}</div>
   <div class="card-body">
@@ -9,10 +10,12 @@
   <div class="card-footer text-muted">{{format_date date_created}}</div>
 </div>
 
+{{!-- Comments header --}}
 <div class="container">
   <h4>Recent Comments:</h2>
 </div>
 
+{{!-- Checks for comments, and displays, which gets updated with every comment --}}
 {{#each comments as |comment|}}
 <div class="container">
   <div class="row comment-border">
@@ -29,6 +32,7 @@
 </div>
 {{/each}}
 
+{{!-- Form to comment on this post --}}
 <div class="container">
   <div class="row">
     <div class="col-md-12">
