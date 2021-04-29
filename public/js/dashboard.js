@@ -1,3 +1,4 @@
+// Function to handle creation of a new post
 const newPostHandler = async (event) => {
   event.preventDefault();
 
@@ -19,6 +20,7 @@ const newPostHandler = async (event) => {
   }
 };
 
+// Handles the delete button to delete posts
 const delButtonHandler = async (event) => {
   if (event.target.hasAttribute("data-id") && event.target.id == "delete") {
     const id = event.target.getAttribute("data-id");
@@ -35,6 +37,7 @@ const delButtonHandler = async (event) => {
   }
 };
 
+// Event listeners
 document
   .querySelector(".new-post-form")
   .addEventListener("submit", newPostHandler);
@@ -42,4 +45,3 @@ document
 document
   .querySelector(".post-list")
   .addEventListener("click", delButtonHandler);
-
