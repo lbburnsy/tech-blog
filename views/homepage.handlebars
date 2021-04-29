@@ -1,12 +1,14 @@
+{{!-- Creates a card to display each post with the option to view it alone --}}
+
 {{#each posts as |post| }}
 <div class="card text-center padding-bottom">
-      <div class="card-body">
-        <h5 class="card-title">{{post.title}}</h5>
-        <p class="card-text">
-          {{post.description}}
-        </p>
-        <a href="/post/{{post.id}}" class="btn btn-primary">Read More:</a>
-      </div>
-      <div class="card-footer text-muted">By {{post.user.name}} on {{format_date post.date_created}}</div>
-    </div>
+  <div class="card-body">
+    <h5 class="card-title">{{post.title}}</h5>
+    <p class="card-text">
+      {{post.description}}
+    </p>
+    <a href="/post/{{post.id}}" class="btn btn-primary">Read More</a>
+  </div>
+  <div class="card-footer text-muted">By {{post.user.name}} on {{format_date post.date_created}}</div>
+</div>
 {{/each}}
