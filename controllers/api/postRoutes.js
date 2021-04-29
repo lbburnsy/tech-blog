@@ -45,7 +45,7 @@ router.put("/:id", withAuth, async (req, res) => {
       }
     );
 
-    restore.status(200).json(postData);
+    res.status(200).json(postData);
   } catch (err) {
       res.status(500).json(err);
   }
